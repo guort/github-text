@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>点名系统</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: #000;
+    	overflow: hidden;
+    }
+    ul {
+        list-style: none;
+    }
+    .max{
+        width: 1000px;
+        height: 300px;
+        font-size: 30px;
+        font-weight: 0;
+        cursor: pointer;
+        margin: 50px auto 0;
+        border-top: 1px solid green;
+        border-bottom: 1px solid green;
+        box-sizing: border-box;
+        position: relative;
+        transition: all 0.5s;
+    }
+    .max:hover{
+        font-size: 40px;
+        font-weight: bold;
+    }
+    #box,#box1,#box2{
+        width: 300px;
+        height: 300px;
+        font-family: "微软雅黑";
+        line-height: 300px;
+        text-align: center;
+        overflow: hidden;
+        position: absolute;
+        top: -1px;
+    }    
+    #box li,#box1 li,#box2 li {
+        width: 300px;
+        height: 300px;
+        box-sizing: border-box;
+        color: #fff;
+        font-family: "微软雅黑";
+        line-height: 300px;
+        text-align: center;
+        overflow: hidden;
+        float: left;
+        background-color: rgba(0,0,0,0);
+        border: 1px solid green;
+        box-sizing: border-box;
+        margin: 0;
+    }
+    #box{
+        left: 0;
+    }
+    #box1{
+        left: 350px;
+    }
+    #box2{
+        right: 0;
+    }
+    #box ul,#box1 ul,#box2 ul {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    #btn{
+        width: 200px;
+        height: 60px;
+        display: block;
+        text-decoration: none;
+        border: 1px solid #eee;
+        border-radius: 30px;
+        line-height: 60px;
+        text-align: center;
+        color: #eee;
+        font-family: "微软雅黑";
+        font-size: 18px;
+        margin:0 auto 100px;
+        transition: all 1s; 
+    }
+    #btn:hover{
+        width: 1000px;
+        border-color: green;
+        color:green;
+    }
+    p{
+        color:green;
+        font-size: 12px;
+        text-align: center;
+        line-height: 16px;
+    }
+    #sp{
+        display: block;
+        width: 1000px;
+        height: 100px;
+        font-size: 6px;
+        font-family: "微软雅黑";
+        margin: 0 auto;
+        line-height: 100px;
+        text-align: center;
+        color: green;
+        animation:myfirst 0.5s paused forwards;
+    }
+        @keyframes myfirst
+        {
+        from {bfont-size:16px;}
+        to {font-size:30px;}
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="max">
+        <div id="box">
+            <ul>
+                <li>攻城狮，</li>
+            </ul>
+        </div>
+        <div id="box1">
+            <ul>
+                <li>ready？</li>
+            </ul>
+        </div>
+        <div id="box2">
+            <ul>
+                <li>go！</li>
+            </ul>
+        </div>
+    </div>
+    <span id="sp"></span>
+    <a href="javascript:void(0)" id="btn">开始</a>
+    <p>说明:将任意名单复制粘贴到页面id为names的标签内添加注释，即可开始随机点名！</p>
+    <p style="color:#000">作者:陈晨</p>
+</body>
+    <script id="names">
+                                   /*         
+        	张孝梅                                      陈惠芳  翟英祥  催渊  涂新昭  罗平益  谢韶光  杨凯  李佳佳  刘轲轲  杨红哲                              王会闯  韩中绪  武华青  郝宇薇  王美琴  朱小琳                 董沛沛  孙建辉  王亚男  王恩喜  张同磊  范广  段扬帅  杨静静              朱承承  黄小雨  喻小雪  刘少乾  张明月  张璐  王院院  别必  张荣秋  王小策  费伊蒙  杜程                       李杰  周曼  王军胜  许俊杰  李威  邢飞亚  田亚英  许钰  高删  陈广              常添川  段龙  田潞  任鹤飞  梁远  冯祺  于跃江  杜业云  郭裕林  张超  李盛业  赵志杰  熊川宇  刘宣铖  高亚娟  温帅  王沛  张洋  王奇  庄再茜  徐婷婷  郭瑞涛  孙伟           卫鹏艳  徐畅  陈玉珍  吴康  王洋  郑晓刚  殷志强  李妍  柳贺新  付博  聂美琪  马瑞  相鹏禹  尚雪娜  王忠璞                 吴晶晶  王玉婷  王思钧  尹相龙  谢志鹏  陈瀛  李净英          田中原  雷冰  罗山  张亚军  谷国良  韩庆辉  郝彬  阮凡皓  陈祥  赵红丽  赖文  李涛  赵卓瑶  索文杰      卢少强                  郭晓东  王豪  何竹健  吁腾  邦丽娟  任晨光  王楠  赵燕鸽  冯瑞欣  李朵朵  张宁  张美翔                  郑丹丹  孔德晨  池远哲  李娜  张雪  张钧  杜东阳  刘冲冲  刘硕  袁冬  孙守鑫  殷昊  孙红厚  高全
+        		             */            
+    </script>
+<script>
+	var sp = document.getElementById('sp'),
+        box = document.getElementById('box'),
+        box1 = document.getElementById('box1'),
+        box2 = document.getElementById('box2'),
+        ul = box.getElementsByTagName('ul')[0],
+        ul1 = box1.getElementsByTagName('ul')[0],
+        ul2 = box2.getElementsByTagName('ul')[0],
+        lis = ul.getElementsByTagName('li'),
+        lis1 = ul1.getElementsByTagName('li'),
+        lis2 = ul2.getElementsByTagName('li'),
+		btn = document.getElementById('btn'),
+		names = document.getElementById('names').innerHTML,
+		Rnam1 = /^\s{0,}\/\*\s{0,}|\s{0,}\*\/\s{0,}$/g,
+		Rnam2 = /\s{1,}/g,
+		names = names.replace(Rnam1, ""),
+		names = names.replace(Rnam2, ","),
+		nameArr = names.split(","),
+		timer = null,timerFalse = null,randoma,randomb,randomc,
+		flag = true,
+        allflag = true,
+        li,li1,li2,
+		i = 0;
+        console.log(nameArr);
+        document.getElementById('names').parentNode.removeChild(document.getElementById('names'));
+        for(var j = 0; j < nameArr.length; j++){
+            nameArr[j] = nameArr[j].split('');
+            if(nameArr[j].length != 3){
+                nameArr[j].splice(1,0,'_');
+            }
+        }
+		btn.addEventListener('click',function(){
+                if(flag == true && btn.innerHTML == '开始'){
+                    flag = false;
+                    btn.innerHTML = '停止';
+                    sp.innerHTML = '';
+                    sp.style.animation = 'none';
+                    randomName();
+                    timer = setInterval(play,5);
+                    function play(){
+                        if(i % 300 == -290){
+                            randomName();
+                        }
+                        ul.style.top = i + 'px';
+                        ul1.style.top = i + 'px';
+                        ul2.style.top = i + 'px';
+                        i -= 5;
+                    }
+                }else{
+                    clearInterval(timer);
+                    if(btn.innerHTML == '停止'){
+                        btn.innerHTML = '请稍后……';
+                        timerFalse = setInterval(stop,30);
+                    }
+                    var k = i - 900 - (300 + (i % 300)); 
+                    function stop(){
+                        if(i != k){
+                            if(i % 300 == -290){
+                                randomName();
+                            }
+                            ul.style.top = i + 'px';
+                            ul1.style.top = i + 'px';
+                            ul2.style.top = i + 'px';
+                            i -= 5;
+                        }else{
+                            ul.style.top = i + 'px';
+                            ul1.style.top = i + 'px';
+                            ul2.style.top = i + 'px';
+                            btn.innerHTML = '开始';
+                            flag = true;
+                            clearInterval(timerFalse);
+                            var two = lis1[Math.abs(i / 300)].innerHTML;
+                            if(two == "_"){
+                                two = '';
+                            }
+                            var spanHtml = lis[Math.abs(i / 300)].innerHTML + two + lis2[Math.abs(i / 300)].innerHTML;
+                            sp.innerHTML = '让我们有请<span style="color:red;">' + spanHtml + '</span>同学发表个人意见';
+                            sp.style.animation = 'myfirst 0.5s running forwards';
+                        }
+                    }
+                }
+        })
+        	
+        function randomName(){
+            li = document.createElement('li');
+            li1 = document.createElement('li');
+            li2 = document.createElement('li');
+            randoma = parseInt(Math.random() * nameArr.length);
+            li.innerHTML = nameArr[randoma][0];
+            li1.innerHTML = nameArr[randoma][1];
+            li2.innerHTML = nameArr[randoma][2];
+            ul.appendChild(li);
+            ul1.appendChild(li1);
+            ul2.appendChild(li2);
+		}
+</script>
+</html>
