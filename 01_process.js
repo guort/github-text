@@ -31,7 +31,8 @@
 
 // console.log(process.memoryUsage());
 
-console.log(1);
+// console.log(1);
+// github 测试
 
 setTimeout(function() {
   console.log(2);
